@@ -498,7 +498,8 @@ img {
 }
 
 .insights-grid,
-.content-themes {
+.content-themes,
+.video-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
@@ -506,7 +507,8 @@ img {
 }
 
 .insight-card,
-.theme-card {
+.theme-card,
+.video-card {
   padding: 22px;
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.52);
@@ -515,6 +517,34 @@ img {
 
 .theme-card {
   min-height: 180px;
+}
+
+.video-frame {
+  width: 100%;
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background:
+    linear-gradient(135deg, rgba(29, 29, 31, 0.9), rgba(103, 86, 75, 0.9)),
+    radial-gradient(circle at top left, rgba(202, 107, 61, 0.35), transparent 38%);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.video-card .video-link {
+  display: inline-flex;
+  margin-top: 16px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(29, 29, 31, 0.05);
+  border: 1px solid rgba(29, 29, 31, 0.08);
+  font-weight: 600;
 }
 
 .rec-item {
@@ -578,7 +608,8 @@ img {
   .skills-grid,
   .project-hero-inner,
   .insights-grid,
-  .content-themes {
+  .content-themes,
+  .video-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -594,7 +625,8 @@ img {
   .projects-grid,
   .value-grid,
   .insights-grid,
-  .content-themes {
+  .content-themes,
+  .video-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -630,7 +662,8 @@ img {
   .two-column,
   .stats-grid,
   .insights-grid,
-  .content-themes {
+  .content-themes,
+  .video-grid {
     grid-template-columns: 1fr;
   }
 
